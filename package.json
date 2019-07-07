@@ -2,6 +2,9 @@
   "name": "react-demo",
   "version": "0.1.0",
   "private": true,
+  "description": "I demonstrated it by creating the react project via the create-react-app",
+  "author": "MoonCheung <salvador23@163.com>",
+  "license": "MIT",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
