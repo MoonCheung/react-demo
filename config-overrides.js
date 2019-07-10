@@ -1,5 +1,4 @@
 /* config-overrides.js */
-// const { injectBabelPlugin } = require('react-app-rewired');
 const { override, fixBabelImports, addBabelPlugin } = require('customize-cra');
 const rewireCssModules = require('react-app-rewire-css-modules');
 const path = require('path');
@@ -20,3 +19,14 @@ module.exports = override(
     style: 'css'
   })
 );
+
+module.exports = function override(config, env) {
+  //do stuff with the webpack config...
+  //css模块化
+  config = rewireCssModules(config, env);
+  //配置别名
+  config.resolve.alias = {
+    '@': resolve('src')
+  };
+  return config;
+};
