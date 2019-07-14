@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Input } from 'antd';
 import withTimer from './withTimer';
 
 class MessageList extends React.PureComponent {
@@ -26,14 +27,14 @@ export class ChatApp extends React.Component {
     this.handleSend = this.handleSend.bind(this);
   }
 
-  //该方法函数
+  //该输入input方法
   handleInput = event => {
     this.setState({
       inputMsg: event.target.value
     });
   };
 
-  //该方法函数
+  //该提交方法
   handleSend = () => {
     const text = this.state.inputMsg;
     if (text) {
@@ -52,12 +53,16 @@ export class ChatApp extends React.Component {
       <div>
         <MessageList messages={this.state.messages} />
         <div>
-          <input
+          <Input
+            style={{ width: 200 }}
+            size="small"
             type="text"
             value={this.state.inputMsg}
             onChange={this.handleInput}
           />
-          <button onClick={this.handleSend}>提交</button>
+          <Button size="small" type="primary" onClick={this.handleSend}>
+            提交
+          </Button>
         </div>
         <h2>{this.props.time.toLocaleString()}</h2>
       </div>

@@ -1,5 +1,5 @@
-import React from 'react';
 import ChatApp from '@/views/chap01/chatApp';
+import CommentBox from '@/views/chap02/CommentBox';
 
 const routes = [
   {
@@ -8,12 +8,8 @@ const routes = [
     main: ChatApp
   },
   {
-    path: '/bubblegum',
-    main: () => <h2>Bubblegum</h2>
-  },
-  {
-    path: '/shoelaces',
-    main: () => <h2>Shoelaces</h2>
+    path: '/comment',
+    main: CommentBox
   }
 ];
 
