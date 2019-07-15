@@ -61,31 +61,34 @@ module.exports = {
     semi: 0, //不强制使用分号
     'no-control-regex': 2, // 禁止在正则表达式中使用控制字符 ：new RegExp("\x1f")
     'linebreak-style': ['error', 'windows'], // 强制使用一致的换行风格
+    //空格4个
     indent: [
       'error',
       4,
       {
         SwitchCase: 1
       }
-    ], //空格4个
+    ],
     'array-bracket-spacing': [2, 'never'], // 指定数组的元素之间要以空格隔开(,后面)
+    // if while function 后面的{必须与if在同一行，java风格。
     'brace-style': [
       2,
       '1tbs',
       {
         allowSingleLine: true
       }
-    ], // if while function 后面的{必须与if在同一行，java风格。
+    ],
     'no-irregular-whitespace': 0, //不规则的空白不允许
     'no-trailing-spaces': 1, //一行结束后面有空格就发出警告
     'eol-last': 0, //文件以单一的换行符结束
+    //不能有声明后未被使用的变量或参数
     'no-unused-vars': [
       1,
       {
         vars: 'all',
         args: 'after-used'
       }
-    ], //不能有声明后未被使用的变量或参数
+    ],
     'no-underscore-dangle': 0, //标识符不能以_开头或结尾
     'no-alert': 2, //禁止使用alert confirm prompt
     'no-lone-blocks': 0, //禁止不必要的嵌套块
@@ -110,23 +113,26 @@ module.exports = {
     //////////////
     // React.相关 //
     //////////////
+    'jsx-a11y/anchor-is-valid': 'off', //href属性校验关闭
     'jsx-quotes': [2, 'prefer-double'], //强制在JSX属性（jsx-quotes）中一致使用双引号
     'react/display-name': 0, //防止在React组件定义中丢失displayName
+    //禁止某些propTypes
     'react/forbid-prop-types': [
       2,
       {
         forbid: ['any']
       }
-    ], //禁止某些propTypes
+    ],
     'react/jsx-boolean-value': 2, //在JSX中强制布尔属性符号
     'react/jsx-closing-bracket-location': 1, //在JSX中验证右括号位置
+    //在JSX属性和表达式中加强或禁止大括号内的空格。
     'react/jsx-curly-spacing': [
       2,
       {
         when: 'never',
         children: true
       }
-    ], //在JSX属性和表达式中加强或禁止大括号内的空格。
+    ],
     'react/jsx-indent-props': [2, 4], //验证JSX中的props缩进
     'react/jsx-key': 2, //在数组或迭代器中验证JSX具有key属性
     'react/jsx-no-bind': 0, //JSX中不允许使用箭头函数和bind

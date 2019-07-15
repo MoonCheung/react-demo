@@ -23,6 +23,9 @@ const App = () => (
               <li>
                 <Link to="/comment">CommentBox</Link>
               </li>
+              <li>
+                <Link to="/tabsel">TabSelector</Link>
+              </li>
             </ul>
           </div>
         </Col>
