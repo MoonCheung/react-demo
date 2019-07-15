@@ -7,19 +7,21 @@ export default class TabSelector extends PureComponent {
   static propTypes = {
     options: PropTypes.array,
     value: PropTypes.string,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    children: PropTypes.func
   };
 
   //默认prop值
   static defaultProps = {
     options: [],
     value: null,
-    onChange: () => {}
+    onChange: () => {},
+    children: () => {}
   };
 
   //渲染
   render() {
-    const { options, value, onChange } = this.props;
+    const { options, value, onChange, children } = this.props;
     return (
       <div className="tab-selector">
         <ul>
@@ -32,6 +34,9 @@ export default class TabSelector extends PureComponent {
             </li>
           ))}
         </ul>
+        <br />
+        <br />
+        {value && children(value)}
       </div>
     );
   }
@@ -46,18 +51,27 @@ const options = [
 export class TabSelectorSample extends PureComponent {
   // 自身组件状态
   state = {
-    color: null
+    color: null,
+    animal: null,
   };
   // 渲染
   render() {
     return (
       <div>
-        Select color:{' '}
+        <h3>Select color:</h3>
         <TabSelector
           options={options}
           value={this.state.color}
-          onChange={val => this.setState({ color: val })}
-        />
+          onChange={val => this.setState({ color: val })}>
+          {color => (
+            <span style={{
+              display:'inline-block',
+              backgroundColor: color,
+              width: '50px',
+              height: '50px'
+            }} />
+          )}
+        </TabSelector>
       </div>
     );
   }

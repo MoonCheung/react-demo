@@ -3,6 +3,7 @@ import CommentBox from '@/views/chap02/CommentBox';
 import { TabSelectorSample } from '@/views/chap02/TabSelector';
 import Clock from '@/views/chap03/Clock';
 import SnapshotSample from '@/views/chap03/SnapshotSample';
+import LocaleSample from '@/views/chap04/LocaleSample'
 
 const routes = [
   {
@@ -25,6 +26,10 @@ const routes = [
   {
     path: '/snapshot',
     main: SnapshotSample
+  },
+  {
+    path: '/locale',
+    main: LocaleSample
   }
 ];
 

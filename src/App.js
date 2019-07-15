@@ -18,19 +18,22 @@ const App = () => (
             <Header name="基础篇" />
             <ul style={{ listStyleType: 'none', padding: 0 }}>
               <li>
-                <Link to="/chat">chat</Link>
+                <Link to="/chat">生命周期</Link>
               </li>
               <li>
-                <Link to="/comment">CommentBox</Link>
+                <Link to="/comment">N个组件考虑UI构建</Link>
               </li>
               <li>
-                <Link to="/tabsel">TabSelector</Link>
+                <Link to="/tabsel">PropTypes类型检查</Link>
               </li>
               <li>
-                <Link to="/clock">Clock</Link>
+                <Link to="/clock">State & 生命周期1</Link>
               </li>
               <li>
-                <Link to="/snapshot">Snapshot</Link>
+                <Link to="/snapshot">State & 生命周期2</Link>
+              </li>
+              <li>
+                <Link to="/locale">Context API</Link>
               </li>
             </ul>
           </div>
