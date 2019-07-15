@@ -26,6 +26,12 @@ const App = () => (
               <li>
                 <Link to="/tabsel">TabSelector</Link>
               </li>
+              <li>
+                <Link to="/clock">Clock</Link>
+              </li>
+              <li>
+                <Link to="/snapshot">Snapshot</Link>
+              </li>
             </ul>
           </div>
         </Col>
