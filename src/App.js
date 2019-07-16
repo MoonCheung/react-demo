@@ -35,6 +35,9 @@ const App = () => (
               <li>
                 <Link to="/locale">Context API</Link>
               </li>
+              <li>
+                <Link to="/redux_1">Redux状态管理</Link>
+              </li>
             </ul>
           </div>
         </Col>

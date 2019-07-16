@@ -4,6 +4,7 @@ import { TabSelectorSample } from '@/views/chap02/TabSelector';
 import Clock from '@/views/chap03/Clock';
 import SnapshotSample from '@/views/chap03/SnapshotSample';
 import LocaleSample from '@/views/chap04/LocaleSample'
+import PureRedux from '@/views/chap05/PureRedux'
 
 const routes = [
   {
@@ -30,6 +31,10 @@ const routes = [
   {
     path: '/locale',
     main: LocaleSample
+  },
+  {
+    path: '/redux_1',
+    main: PureRedux
   }
 ];
 
