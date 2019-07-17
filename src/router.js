@@ -5,6 +5,9 @@ import Clock from '@/views/chap03/Clock';
 import SnapshotSample from '@/views/chap03/SnapshotSample';
 import LocaleSample from '@/views/chap04/LocaleSample'
 import PureRedux from '@/views/chap05/PureRedux'
+import Counter from '@/views/chap06/Counter'
+import RouterParams from '@/views/chap07/RouterParams'
+import NestedRouter from '@/views/chap07/NestedRouter'
 
 const routes = [
   {
@@ -35,6 +38,18 @@ const routes = [
   {
     path: '/redux_1',
     main: PureRedux
+  },
+  {
+    path: '/redux_2',
+    main: Counter
+  },
+  {
+    path: '/route_1',
+    main: RouterParams
+  },
+  {
+    path: '/route_2',
+    main: NestedRouter
   }
 ];
 

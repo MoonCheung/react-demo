@@ -35,8 +35,20 @@ const App = () => (
               <li>
                 <Link to="/locale">Context API</Link>
               </li>
+            </ul>
+            <Header name="生态篇" />
+            <ul style={{ listStyleType: 'none', padding: 0 }}>
               <li>
                 <Link to="/redux_1">Redux状态管理</Link>
+              </li>
+              <li>
+                <Link to="/redux_2">Redux状态管理1</Link>
+              </li>
+              <li>
+                <Link to="/route_1">路由参数</Link>
+              </li>
+              <li>
+                <Link to="/route_2">嵌套路由参数</Link>
               </li>
             </ul>
           </div>

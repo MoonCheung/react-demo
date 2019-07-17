@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'antd';
-import { createStore, combineReducers, bindActionCreators } from 'redux';
+import { createStore, combineReducers } from 'redux';
 
 function run() {
   // 存储初始化状态
