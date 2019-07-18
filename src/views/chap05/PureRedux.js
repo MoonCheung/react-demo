@@ -11,15 +11,15 @@ function run() {
   // reducer
   const counter = (state = initialState, action) => {
     switch (action.type) {
-      case "PLUS_ONE":
-        return {count: state.count + 1};
-      case "MINUS_ONE":
-        return {count: state.count - 1};
-      case "CUSTOM_COUNT": 
+      case 'PLUS_ONE':
+        return { count: state.count + 1 };
+      case 'MINUS_ONE':
+        return { count: state.count - 1 };
+      case 'CUSTOM_COUNT':
         return {
           count: state.count + action.payload.count
         };
-      default: 
+      default:
         break;
     }
     return state;
@@ -34,43 +34,44 @@ function run() {
       todos,
       counter
     })
-  )
+  );
 
   // action creator
   // 只需返回一个action
-  function plusOne(){
-    return { 
-      type: "PLUS_ONE"
-    }
-  }
-
-  function minusOne(){
-    return { 
-      type: "MINUS_ONE"
-    }
-  }
-
-  function customCount(count){
+  function plusOne() {
     return {
-      type: "CUSTOM_COUNT",
+      type: 'PLUS_ONE'
+    };
+  }
+
+  function minusOne() {
+    return {
+      type: 'MINUS_ONE'
+    };
+  }
+
+  function customCount(count) {
+    return {
+      type: 'CUSTOM_COUNT',
       payload: { count }
-    }
+    };
   }
 
   // plusOne = bindActionCreators(plusOne, store.dispatch);
   // 添加subscribe()。它将在任何时候调用一个action，并且状态树的某些部分可能已经更改。然后可以调用getState()来读取回调函数中的当前状态树。
   // 返回应用程序的当前状态树。它等于存储的减速器返回的最后一个值。
-  store.subscribe(() => console.log(store.getState()))
+  store.subscribe(() => console.log(store.getState()));
   // plusOne();
-  store.dispatch(plusOne(1))
-  store.dispatch(minusOne())
-  store.dispatch(customCount(5))
-
+  store.dispatch(plusOne(1));
+  store.dispatch(minusOne());
+  store.dispatch(customCount(5));
 }
 
 export default () => (
   <div>
-    <Button type="primary" onClick={run}>Run</Button>
+    <Button type="primary" onClick={run}>
+      Run
+    </Button>
     <p>* 请打开控制台查看运行结果</p>
   </div>
-)
+);

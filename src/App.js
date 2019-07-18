@@ -35,6 +35,9 @@ const App = () => (
               <li>
                 <Link to="/locale">Context API</Link>
               </li>
+              <li>
+                <Link to="/stopwatch">示例: 秒表</Link>
+              </li>
             </ul>
             <Header name="生态篇" />
             <ul style={{ listStyleType: 'none', padding: 0 }}>

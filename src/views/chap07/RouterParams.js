@@ -1,9 +1,7 @@
-import { BrowserRouter as Router, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import React from 'react';
 
-const Topic = ({match}) => (
-  <h1>话题: {match.params.id}</h1>
-)
+const Topic = ({ match }) => <h1>话题: {match.params.id}</h1>;
 
 export default class RouterParams extends React.PureComponent {
   //渲染函数
@@ -27,6 +25,6 @@ export default class RouterParams extends React.PureComponent {
           <Route path="/topic/:id" component={Topic} />
         </div>
       </Router>
-    )
+    );
   }
 }
