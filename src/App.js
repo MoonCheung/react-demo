@@ -36,6 +36,18 @@ const App = () => (
                 <Link to="/locale">Context API</Link>
               </li>
               <li>
+                <Link to="/designmodule">设计模式:傻瓜和聪明组件</Link>
+              </li>
+              <li>
+                <Link to="/designmodule1">设计模式:高阶组件</Link>
+              </li>
+              <li>
+                <Link to="/designmodule2">设计模式:render props 模式</Link>
+              </li>
+              <li>
+                <Link to="/designmodule3">设计模式:提供者模式</Link>
+              </li>
+              <li>
                 <Link to="/stopwatch">示例: 秒表</Link>
               </li>
             </ul>

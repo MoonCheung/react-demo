@@ -9,6 +9,10 @@ import Counter from '@/views/chap06/Counter';
 import RouterParams from '@/views/chap07/RouterParams';
 import NestedRouter from '@/views/chap07/NestedRouter';
 import StopWatch from '@/views/chap08/StopWatch';
+import RandomJoke from '@/views/chap09/RandomJoke';
+import HocComponent from '@/views/chap10/HocComponent';
+import RenderProps from '@/views/chap11/RenderProps';
+import Provider from '@/views/chap12/index';
 
 const routes = [
   {
@@ -55,6 +59,22 @@ const routes = [
   {
     path: '/stopwatch',
     main: StopWatch
+  },
+  {
+    path: '/designmodule',
+    main: RandomJoke
+  },
+  {
+    path: '/designmodule1',
+    main: HocComponent
+  },
+  {
+    path: '/designmodule2',
+    main: RenderProps
+  },
+  {
+    path: '/designmodule3',
+    main: Provider
   }
 ];
 
