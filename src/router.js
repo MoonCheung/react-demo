@@ -13,6 +13,7 @@ import RandomJoke from '@/views/chap09/RandomJoke';
 import HocComponent from '@/views/chap10/HocComponent';
 import RenderProps from '@/views/chap11/RenderProps';
 import Provider from '@/views/chap12/index';
+import Tabs from '@/views/chap13/Tabs';
 
 const routes = [
   {
@@ -75,6 +76,10 @@ const routes = [
   {
     path: '/designmodule3',
     main: Provider
+  },
+  {
+    path: '/designmodule4',
+    main: Tabs
   }
 ];
 

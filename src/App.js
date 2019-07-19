@@ -48,6 +48,9 @@ const App = () => (
                 <Link to="/designmodule3">设计模式:提供者模式</Link>
               </li>
               <li>
+                <Link to="/designmodule4">设计模式:组合模式</Link>
+              </li>
+              <li>
                 <Link to="/stopwatch">示例: 秒表</Link>
               </li>
             </ul>
