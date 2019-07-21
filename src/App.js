@@ -36,6 +36,12 @@ const App = () => (
                 <Link to="/locale">Context API</Link>
               </li>
               <li>
+                <Link to="/suspense">Suspense API</Link>
+              </li>
+              <li>
+                <Link to="/hoock">Hoock API</Link>
+              </li>
+              <li>
                 <Link to="/designmodule">设计模式:傻瓜和聪明组件</Link>
               </li>
               <li>

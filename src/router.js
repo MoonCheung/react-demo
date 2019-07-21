@@ -15,6 +15,8 @@ import RenderProps from '@/views/chap11/RenderProps';
 import Provider from '@/views/chap12/index';
 import Tabs from '@/views/chap13/Tabs';
 import MobxDemo from '@/views/chap14/Index';
+import SuspenseDemo from '@/views/chap15/SuspenseDemo';
+import HoockDemo from '@/views/chap16/Index';
 
 const routes = [
   {
@@ -24,67 +26,93 @@ const routes = [
   },
   {
     path: '/comment',
+    exact: true,
     main: CommentBox
   },
   {
     path: '/tabsel',
+    exact: true,
     main: TabSelectorSample
   },
   {
     path: '/clock',
+    exact: true,
     main: Clock
   },
   {
     path: '/snapshot',
+    exact: true,
     main: SnapshotSample
   },
   {
     path: '/locale',
+    exact: true,
     main: LocaleSample
   },
   {
     path: '/redux_1',
+    exact: true,
     main: PureRedux
   },
   {
     path: '/redux_2',
+    exact: true,
     main: Counter
   },
   {
     path: '/route_1',
+    exact: true,
     main: RouterParams
   },
   {
     path: '/route_2',
+    exact: true,
     main: NestedRouter
   },
   {
     path: '/stopwatch',
+    exact: true,
     main: StopWatch
   },
   {
     path: '/designmodule',
+    exact: true,
     main: RandomJoke
   },
   {
     path: '/designmodule1',
+    exact: true,
     main: HocComponent
   },
   {
     path: '/designmodule2',
+    exact: true,
     main: RenderProps
   },
   {
     path: '/designmodule3',
+    exact: true,
     main: Provider
   },
   {
     path: '/designmodule4',
+    exact: true,
     main: Tabs
   },
   {
     path: '/mobx',
+    exact: true,
     main: MobxDemo
+  },
+  {
+    path: '/suspense',
+    exact: true,
+    main: SuspenseDemo
+  },
+  {
+    path: '/hoock',
+    exact: true,
+    main: HoockDemo
   }
 ];
 
