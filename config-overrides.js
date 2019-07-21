@@ -1,5 +1,11 @@
 /* config-overrides.js */
-const { override, fixBabelImports, addBabelPlugin, useBabelRc } = require('customize-cra');
+const {
+  override,
+  fixBabelImports,
+  addBabelPlugin,
+  useBabelRc,
+  addDecoratorsLegacy
+} = require('customize-cra');
 const rewireCssModules = require('react-app-rewire-css-modules');
 const path = require('path');
 
@@ -9,6 +15,8 @@ function resolve(dir) {
 
 module.exports = override(
   useBabelRc(),
+  //添加装饰器,确保安装了@babel/plugin-proposal-decorator。
+  addDecoratorsLegacy(),
   addBabelPlugin(
     //启用ES7的修改器语法（babel 7), 还有{ "legacy": true }一定不能掉，否则报错
     ['@babel/plugin-proposal-decorators', { legacy: true }]

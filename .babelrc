@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    "@babel/preset-env",
+    "@babel/preset-stage-1",
+    ["react-app", {
+      "absoluteRuntime": false
+    }],
+    "mobx"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    ["@babel/plugin-proposal-decorators", {
+      "legacy": true
+    }],
+    ["@babel/plugin-proposal-class-properties", {
+      "loose": true
+    }]
+  ]
+}

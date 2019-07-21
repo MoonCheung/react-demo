@@ -14,6 +14,7 @@ import HocComponent from '@/views/chap10/HocComponent';
 import RenderProps from '@/views/chap11/RenderProps';
 import Provider from '@/views/chap12/index';
 import Tabs from '@/views/chap13/Tabs';
+import MobxCounter from '@/views/chap14/MobxCounter';
 
 const routes = [
   {
@@ -80,6 +81,10 @@ const routes = [
   {
     path: '/designmodule4',
     main: Tabs
+  },
+  {
+    path: '/mobx_1',
+    main: MobxCounter
   }
 ];
 
