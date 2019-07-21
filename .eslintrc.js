@@ -24,7 +24,8 @@ module.exports = {
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
       // 启用 JSX
-      jsx: true
+      jsx: true,
+      legacyDecorators: true
     },
     sourceType: 'module',
     // ECMAScript版本

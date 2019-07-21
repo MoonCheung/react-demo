@@ -7,7 +7,7 @@ const CounterView = ({
   caption = 'Count',
   onIncrement,
   onDecrement
-}) => {
+}) => (
   <div>
     <h1>
       {caption}: {count}
@@ -15,9 +15,10 @@ const CounterView = ({
     <Button type="primary" onClick={onIncrement}>
       +
     </Button>
+    &nbsp;&nbsp;
     <Button type="primary" onClick={onDecrement}>
       -
     </Button>
-  </div>;
-};
+  </div>
+);
 export default CounterView;

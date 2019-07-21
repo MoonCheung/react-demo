@@ -14,7 +14,7 @@ import HocComponent from '@/views/chap10/HocComponent';
 import RenderProps from '@/views/chap11/RenderProps';
 import Provider from '@/views/chap12/index';
 import Tabs from '@/views/chap13/Tabs';
-import MobxCounter from '@/views/chap14/MobxCounter';
+import MobxDemo from '@/views/chap14/Index';
 
 const routes = [
   {
@@ -83,8 +83,8 @@ const routes = [
     main: Tabs
   },
   {
-    path: '/mobx_1',
-    main: MobxCounter
+    path: '/mobx',
+    main: MobxDemo
   }
 ];
 

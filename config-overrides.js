@@ -2,8 +2,10 @@
 const {
   override,
   fixBabelImports,
-  addBabelPlugin,
+  addBabelPresets,
+  addBabelPlugins,
   useBabelRc,
+  disableEsLint,
   addDecoratorsLegacy
 } = require('customize-cra');
 const rewireCssModules = require('react-app-rewire-css-modules');
@@ -15,11 +17,19 @@ function resolve(dir) {
 
 module.exports = override(
   useBabelRc(),
-  //添加装饰器,确保安装了@babel/plugin-proposal-decorator。
+  disableEsLint(),
+  //添加装饰器,确保安装了@babel/plugin-proposal-decorators。
   addDecoratorsLegacy(),
-  addBabelPlugin(
+  ...addBabelPresets('@babel/preset-react', '@babel/preset-env', [
+    'react-app',
+    {
+      absoluteRuntime: false
+    }
+  ]),
+  ...addBabelPlugins(
     //启用ES7的修改器语法（babel 7), 还有{ "legacy": true }一定不能掉，否则报错
-    ['@babel/plugin-proposal-decorators', { legacy: true }]
+    ['@babel/plugin-proposal-decorators', { legacy: true }],
+    ['@babel/plugin-proposal-class-properties', { loose: true }]
   ),
   //antd按需加载
   fixBabelImports('import', {
