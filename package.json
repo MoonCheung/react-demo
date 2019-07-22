@@ -74,7 +74,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext .js,src",
+    "lint": "eslint --ext .js src",
     "format": "prettier-eslint --write \"src/**/*.js\""
   },
   "eslintConfig": {

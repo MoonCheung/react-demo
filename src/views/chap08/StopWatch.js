@@ -64,7 +64,10 @@ class StopWatch extends React.Component {
   onSplit = () => {
     this.setState({
       //返回合并后得到新数组
-      splits: [...this.state.splits, this.state.currentTime - this.state.startTime]
+      splits: [
+        ...this.state.splits,
+        this.state.currentTime - this.state.startTime
+      ]
     });
   };
 
@@ -79,7 +82,9 @@ class StopWatch extends React.Component {
             💅
           </span>
         </Title>
-        <MajorClock milliseconds={this.state.currentTime - this.state.startTime} />
+        <MajorClock
+          milliseconds={this.state.currentTime - this.state.startTime}
+        />
         <ControlButtons
           activated={this.state.isStarted}
           onStart={this.onStart}

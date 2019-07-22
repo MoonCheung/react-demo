@@ -9,10 +9,14 @@ module.exports = {
     commonjs: true,
     es6: true
   },
-  extends: ['plugin:prettier/recommended', 'plugin:react/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended'
+  ],
   settings: {
     react: {
-      version: 'detect'
+      version: 'latest'
     }
   },
   globals: {
@@ -67,7 +71,7 @@ module.exports = {
       }
     ],
     'react/jsx-boolean-value': 2, //在JSX中强制布尔属性符号
-    'react/jsx-closing-bracket-location': 1, //在JSX中验证右括号位置
+    'react/jsx-closing-bracket-location': 0, //在JSX中验证右括号位置
     //在JSX属性和表达式中加强或禁止大括号内的空格。
     'react/jsx-curly-spacing': [
       2,
@@ -76,7 +80,7 @@ module.exports = {
         children: true
       }
     ],
-    'react/jsx-indent-props': [2, 4], //验证JSX中的props缩进
+    'react/jsx-indent-props': [2, 'first'], //验证JSX中的props缩进
     'react/jsx-key': 2, //在数组或迭代器中验证JSX具有key属性
     'react/jsx-no-bind': 0, //JSX中不允许使用箭头函数和bind
     'react/jsx-no-duplicate-props': 2, //防止在JSX中重复的props
@@ -89,17 +93,17 @@ module.exports = {
     'react/no-did-mount-set-state': 0, //防止在componentDidMount中使用setState
     'react/no-did-update-set-state': 1, //防止在componentDidUpdate中使用setState
     'react/no-direct-mutation-state': 2, //防止this.state的直接变异
-    'react/no-multi-comp': 1, //防止每个文件有多个组件定义
+    'react/no-multi-comp': ['off', { ignoreStateless: true }], //防止每个文件有多个组件定义
     'react/no-set-state': 0, //防止使用setState
     'react/no-unknown-property': 2, //防止使用未知的DOM属性
     'react/prefer-es6-class': 2, //为React组件强制执行ES5或ES6类
     'react/prop-types': 0, //防止在React组件定义中丢失props验证
     'react/react-in-jsx-scope': 2, //使用JSX时防止丢失React
     'react/self-closing-comp': 0, //防止没有children的组件的额外结束标签
-    'react/sort-comp': 1, //强制组件方法顺序
+    'react/sort-comp': 0, //强制组件方法顺序
     'no-extra-boolean-cast': 0, //禁止不必要的bool转换
     'react/no-array-index-key': 0, //防止在数组中遍历中使用数组key做索引
-    'react/no-deprecated': 1, //不使用弃用的方法
+    'react/no-deprecated': 0, //不使用弃用的方法
     'react/jsx-equals-spacing': 2, //在JSX属性中强制或禁止等号周围的空格
     'no-unreachable': 1, //不能有无法执行的代码
     'comma-dangle': 2, // 数组和对象键值对最后一个逗号， never参数：不能带末尾的逗号, always参数：必须带末尾的逗号
@@ -116,8 +120,11 @@ module.exports = {
     //////////////
     // ES6.相关 //
     //////////////
+    'no-unused-vars': 0,
+    'no-undef': 0,
+    'no-console': 0,
     'arrow-body-style': 2, // 要求箭头函数体使用大括号
-    'arrow-parens': 2, // 要求箭头函数的参数使用圆括号
+    'arrow-parens': 0, // 要求箭头函数的参数使用圆括号
     'arrow-spacing': [
       2,
       {

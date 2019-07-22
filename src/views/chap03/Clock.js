@@ -32,15 +32,12 @@ export default class Clock extends Component {
     });
   }
   //渲染函数
-  render(){
+  render() {
     return (
       <div>
         <h1>{this.state.msg}</h1>
-        <h2>
-          It is {this.state.date.toLocaleTimeString()}
-        </h2>
+        <h2>It is {this.state.date.toLocaleTimeString()}</h2>
       </div>
-    )
+    );
   }
 }
-

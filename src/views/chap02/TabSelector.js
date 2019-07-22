@@ -52,7 +52,7 @@ export class TabSelectorSample extends PureComponent {
   // 自身组件状态
   state = {
     color: null,
-    animal: null,
+    animal: null
   };
   // 渲染
   render() {
@@ -64,12 +64,14 @@ export class TabSelectorSample extends PureComponent {
           value={this.state.color}
           onChange={val => this.setState({ color: val })}>
           {color => (
-            <span style={{
-              display:'inline-block',
-              backgroundColor: color,
-              width: '50px',
-              height: '50px'
-            }} />
+            <span
+              style={{
+                display: 'inline-block',
+                backgroundColor: color,
+                width: '50px',
+                height: '50px'
+              }}
+            />
           )}
         </TabSelector>
       </div>
