@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import CommentList from './CommentList';
 import CommentForm from './CommentForm';
 import withTimer from '../chap01/withTimer';
-import '@/styles/CommentBox.css';
+import '@/styles/CommentBox.scss';
 
 const comments = [
   {

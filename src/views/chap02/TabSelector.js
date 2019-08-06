@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import '@/styles/TabSelector.css';
+import '@/styles/TabSelector.scss';
 
 export default class TabSelector extends PureComponent {
   //用于检查类型

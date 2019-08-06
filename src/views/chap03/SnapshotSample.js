@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import '@/styles/SnapshotSample.css';
+import '@/styles/SnapshotSample.scss';
 
 export default class SnapshotSample extends PureComponent {
   //自身状态

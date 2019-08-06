@@ -3,7 +3,7 @@ import logo from '@/icons/logo.svg';
 import { Row, Col } from 'antd';
 import routes from '@/router';
 import React from 'react';
-import '@/styles/App.css';
+import '@/styles/App.scss';
 
 //可复用的组件
 const Header = props => <p>{props.name}</p>;

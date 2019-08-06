@@ -10,6 +10,7 @@ module.exports = {
     es6: true
   },
   extends: [
+    'react-app',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended'
@@ -139,8 +140,5 @@ module.exports = {
     'no-var': 0, // 要求使用 let 或 const 而不是 var
     'object-shorthand': 0, // 要求或禁止对象字面量中方法和属性使用简写语法
     'prefer-template': 0 // 要求使用模板字面量而非字符串连接
-  },
-  settings: {
-    'import/ignore': ['node_modules']
   }
 };
