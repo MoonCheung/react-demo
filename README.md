@@ -1,6 +1,6 @@
 # React-Demo
 
-> This project is used as an example for reference
+> This project serves as a reference for demonstration
 
 ## build step
 
