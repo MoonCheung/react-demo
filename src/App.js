@@ -42,6 +42,9 @@ const App = () => (
                 <Link to="/hoock">Hoock API</Link>
               </li>
               <li>
+                <Link to="/refs">RefsAndDom</Link>
+              </li>
+              <li>
                 <Link to="/designmodule">设计模式:傻瓜和聪明组件</Link>
               </li>
               <li>
