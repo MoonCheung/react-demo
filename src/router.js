@@ -4,8 +4,7 @@ import { TabSelectorSample } from '@/views/chap02/TabSelector';
 import Clock from '@/views/chap03/Clock';
 import SnapshotSample from '@/views/chap03/SnapshotSample';
 import LocaleSample from '@/views/chap04/LocaleSample';
-import PureRedux from '@/views/chap05/PureRedux';
-import Counter from '@/views/chap06/Counter';
+import ReduxDemo from '@/views/chap05/Index';
 import RouterParams from '@/views/chap07/RouterParams';
 import NestedRouter from '@/views/chap07/NestedRouter';
 import StopWatch from '@/views/chap08/StopWatch';
@@ -15,9 +14,9 @@ import RenderProps from '@/views/chap11/RenderProps';
 import Provider from '@/views/chap12/index';
 import Tabs from '@/views/chap13/Tabs';
 import MobxDemo from '@/views/chap14/Index';
-import SuspenseDemo from '@/views/chap15/SuspenseDemo';
-import HoockDemo from '@/views/chap16/Index';
-import RefsDemo from '@/views/chap17/Index';
+import SuspenseDemo from '@/views/chap16/SuspenseDemo';
+import HoockDemo from '@/views/chap17/Index';
+import RefsDemo from '@/views/chap18/Index';
 
 const routes = [
   {
@@ -53,13 +52,13 @@ const routes = [
   {
     path: '/redux_1',
     exact: true,
-    main: PureRedux
+    main: ReduxDemo
   },
-  {
-    path: '/redux_2',
-    exact: true,
-    main: Counter
-  },
+  // {
+  //   path: '/redux_2',
+  //   exact: true,
+  //   main: Counter
+  // },
   {
     path: '/route_1',
     exact: true,

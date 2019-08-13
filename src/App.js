@@ -66,11 +66,11 @@ const App = () => (
             <Header name="生态篇" />
             <ul style={{ listStyleType: 'none', padding: 0 }}>
               <li>
-                <Link to="/redux_1">Redux状态管理</Link>
+                <Link to="/redux">Redux状态管理</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/redux_2">Redux状态管理1</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/mobx">Mobx状态管理</Link>
               </li>
