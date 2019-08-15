@@ -5,7 +5,7 @@ import Clock from '@/views/chap03/Clock';
 import SnapshotSample from '@/views/chap03/SnapshotSample';
 import LocaleSample from '@/views/chap04/LocaleSample';
 import ReduxDemo from '@/views/chap05/Index';
-import CounterDemo from '@/views/chap06/counter/index';
+import ReduxSample from '@/views/chap06/index';
 import RouterParams from '@/views/chap07/RouterParams';
 import NestedRouter from '@/views/chap07/NestedRouter';
 import StopWatch from '@/views/chap08/StopWatch';
@@ -51,14 +51,14 @@ const routes = [
     main: LocaleSample
   },
   {
-    path: '/redux_1',
+    path: '/redux',
     exact: true,
     main: ReduxDemo
   },
   {
-    path: '/redux_2',
+    path: '/redux_1',
     exact: true,
-    main: CounterDemo
+    main: ReduxSample
   },
   {
     path: '/route_1',

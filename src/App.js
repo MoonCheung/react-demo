@@ -69,7 +69,7 @@ const App = () => (
                 <Link to="/redux">Redux状态管理</Link>
               </li>
               <li>
-                <Link to="/redux_2">Redux状态管理1</Link>
+                <Link to="/redux_1">示例: Reddit列表</Link>
               </li>
               <li>
                 <Link to="/mobx">Mobx状态管理</Link>
