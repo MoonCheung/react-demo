@@ -15,9 +15,9 @@ import RenderProps from '@/views/chap11/RenderProps';
 import Provider from '@/views/chap12/index';
 import Tabs from '@/views/chap13/Tabs';
 import MobxDemo from '@/views/chap14/Index';
-import SuspenseDemo from '@/views/chap16/SuspenseDemo';
-import HoockDemo from '@/views/chap17/Index';
-import RefsDemo from '@/views/chap18/Index';
+import SuspenseDemo from '@/views/chap15/SuspenseDemo';
+import HoockDemo from '@/views/chap16/Index';
+import RefsDemo from '@/views/chap17/Index';
 
 const routes = [
   {
