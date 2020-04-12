@@ -24,11 +24,13 @@ class RefsDemo extends React.Component {
     };
   }
 
+  // 实例挂载之后调用
   componentDidMount() {
     // 组件挂载后，让文本框自动获得焦点
     this.focusTextInput(); //打印：undefined
   }
 
+  // 渲染函数
   render() {
     return (
       <div>

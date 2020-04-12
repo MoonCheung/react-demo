@@ -18,6 +18,7 @@ import MobxDemo from '@/views/chap14/Index';
 import SuspenseDemo from '@/views/chap15/SuspenseDemo';
 import HoockDemo from '@/views/chap16/Index';
 import RefsDemo from '@/views/chap17/Index';
+import FormSubmitAntdDemo from '@/views/chap18/Index';
 
 const routes = [
   {
@@ -119,6 +120,11 @@ const routes = [
     path: '/refs',
     exact: true,
     main: RefsDemo
+  },
+  {
+    path: '/form',
+    exact: true,
+    main: FormSubmitAntdDemo
   }
 ];
 
