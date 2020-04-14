@@ -81,15 +81,6 @@ const App = () => (
                 <Link to="/route_2">嵌套路由参数</Link>
               </li>
             </ul>
-            <Header name="常见场景的最佳实践" />
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-              <li>
-                <Link to="/form">使用React Router管理登录和授权</Link>
-              </li>
-              <li>
-                <Link to="/content">内容页的加载与缓存(暂时)</Link>
-              </li>
-            </ul>
           </div>
         </Col>
         <Col className="gutter-row" span={18}>
