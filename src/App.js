@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router , Route, Link } from 'react-router-dom';
 import logo from '@/icons/logo.svg';
 import { Row, Col } from 'antd';
 import routes from '@/router';
@@ -86,6 +86,9 @@ const App = () => (
               <li>
                 <Link to="/form">使用React Router管理登录和授权</Link>
               </li>
+              <li>
+                <Link to="/content">内容页的加载与缓存(暂时)</Link>
+              </li>
             </ul>
           </div>
         </Col>
@@ -97,7 +100,6 @@ const App = () => (
               <Route
                 key={index}
                 path={route.path}
-                exact={route.exact}
                 component={route.main}
               />
             ))}

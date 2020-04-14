@@ -19,112 +19,96 @@ import SuspenseDemo from '@/views/chap15/SuspenseDemo';
 import HoockDemo from '@/views/chap16/Index';
 import RefsDemo from '@/views/chap17/Index';
 import FormSubmitAntdDemo from '@/views/chap18/Index';
+import ContentPageDemo from '@/views/chap19/Index';
 
 const routes = [
   {
     path: '/chat',
-    exact: true,
     main: ChatApp
   },
   {
     path: '/comment',
-    exact: true,
     main: CommentBox
   },
   {
     path: '/tabsel',
-    exact: true,
     main: TabSelectorSample
   },
   {
     path: '/clock',
-    exact: true,
     main: Clock
   },
   {
     path: '/snapshot',
-    exact: true,
     main: SnapshotSample
   },
   {
     path: '/locale',
-    exact: true,
     main: LocaleSample
   },
   {
     path: '/redux',
-    exact: true,
     main: ReduxDemo
   },
   {
     path: '/redux_1',
-    exact: true,
     main: ReduxSample
   },
   {
     path: '/route_1',
-    exact: true,
     main: RouterParams
   },
   {
     path: '/route_2',
-    exact: true,
     main: NestedRouter
   },
   {
     path: '/stopwatch',
-    exact: true,
     main: StopWatch
   },
   {
     path: '/designmodule',
-    exact: true,
     main: RandomJoke
   },
   {
     path: '/designmodule1',
-    exact: true,
     main: HocComponent
   },
   {
     path: '/designmodule2',
-    exact: true,
     main: RenderProps
   },
   {
     path: '/designmodule3',
-    exact: true,
     main: Provider
   },
   {
     path: '/designmodule4',
-    exact: true,
     main: Tabs
   },
   {
     path: '/mobx',
-    exact: true,
     main: MobxDemo
   },
   {
     path: '/suspense',
-    exact: true,
     main: SuspenseDemo
   },
   {
     path: '/hoock',
-    exact: true,
     main: HoockDemo
   },
   {
     path: '/refs',
-    exact: true,
     main: RefsDemo
   },
   {
     path: '/form',
-    exact: true,
     main: FormSubmitAntdDemo
+  },
+  {
+    path: '/content',
+    main: ContentPageDemo
   }
 ];
 
