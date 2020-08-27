@@ -5,6 +5,7 @@
   "description": "I demonstrated it by creating the react project via the create-react-app",
   "author": "MoonCheung <salvador23@163.com>",
   "license": "MIT",
+  "homepage": ".",
   "dependencies": {
     "@svgr/webpack": "4.1.0",
     "@typescript-eslint/eslint-plugin": "1.6.0",
@@ -20,8 +21,8 @@
     "css-loader": "2.1.1",
     "dotenv": "6.2.0",
     "dotenv-expand": "4.2.0",
-    "eslint": "^6.1.0",
-    "eslint-config-react-app": "^4.0.1",
+    "eslint": "^6.6.0",
+    "eslint-config-react-app": "^5.2.0",
     "eslint-loader": "2.1.2",
     "eslint-plugin-flowtype": "2.50.1",
     "eslint-plugin-import": "2.16.0",
@@ -79,18 +80,11 @@
     "lint": "eslint --ext .js src",
     "format": "prettier-eslint --write \"src/**/*.js\""
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "browserslist": [
+    "last 2 versions",
+    "android 4",
+    "opera 12"
+  ],
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",

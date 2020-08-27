@@ -1,4 +1,4 @@
-import { BrowserRouter as Router , Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import logo from '@/icons/logo.svg';
 import { Row, Col } from 'antd';
 import routes from '@/router';
@@ -6,7 +6,7 @@ import React from 'react';
 import '@/styles/App.scss';
 
 //可复用的组件
-const Header = props => <p>{props.name}</p>;
+const Header = (props) => <p>{props.name}</p>;
 
 const App = () => (
   <Router>
@@ -81,6 +81,12 @@ const App = () => (
                 <Link to="/route_2">嵌套路由参数</Link>
               </li>
             </ul>
+            <Header name="Hook实战篇" />
+            <ul style={{ listStyleType: 'none', padding: 0 }}>
+              <li>
+                <Link to="/incrAndDecr">计数器演示</Link>
+              </li>
+            </ul>
           </div>
         </Col>
         <Col className="gutter-row" span={18}>
@@ -88,11 +94,7 @@ const App = () => (
             {routes.map((route, index) => (
               // Render more <Route>s with the same paths as
               // above, but different components this time.
-              <Route
-                key={index}
-                path={route.path}
-                component={route.main}
-              />
+              <Route key={index} path={route.path} component={route.main} />
             ))}
           </div>
         </Col>

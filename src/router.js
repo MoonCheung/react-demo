@@ -18,9 +18,9 @@ import MobxDemo from '@/views/chap14/Index';
 import SuspenseDemo from '@/views/chap15/SuspenseDemo';
 import HoockDemo from '@/views/chap16/Index';
 import RefsDemo from '@/views/chap17/Index';
+import incrAndDecr from '@/views/chap18/Index';
 
-const routes = [
-  {
+const routes = [{
     path: '/chat',
     main: ChatApp
   },
@@ -99,6 +99,10 @@ const routes = [
   {
     path: '/refs',
     main: RefsDemo
+  },
+  {
+    path: '/incrAndDecr',
+    main: incrAndDecr
   }
 ];
 
